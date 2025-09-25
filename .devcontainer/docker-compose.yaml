@@ -2,5 +2,5 @@ services:
   workspace:
     image: mcr.microsoft.com/devcontainers/dotnet:9.0-bookworm
     volumes:
-      - ./..:/workspaces/synapse:cached
+      - ./..:/workspaces/current:cached
     command: sleep infinity

@@ -6,7 +6,7 @@
 	},
 	"dockerComposeFile": "docker-compose.yaml",
 	"service": "workspace",
-	"workspaceFolder": "/workspaces/synapse",
+	"workspaceFolder": "/workspaces/current",
 	"postCreateCommand": "bash .devcontainer/post-create.sh",
 	"remoteUser": "root",
 	"customizations": {
