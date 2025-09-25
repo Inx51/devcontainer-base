@@ -1,0 +1,27 @@
+{
+	"name": "Synapse Dev Container",
+	"features": {
+		"ghcr.io/devcontainers-extra/features/node-asdf:0": {},
+		"ghcr.io/dotnet/aspire-devcontainer-feature/dotnetaspire:1": {}
+	},
+	"dockerComposeFile": "docker-compose.yaml",
+	"service": "workspace",
+	"workspaceFolder": "/workspaces/synapse",
+	"postCreateCommand": "bash .devcontainer/post-create.sh",
+	"remoteUser": "root",
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"terminal.integrated.defaultProfile.linux": "nu",
+				"terminal.integrated.profiles.linux": {
+					"nu": {
+						"path": "/usr/bin/nu",
+						"args": []
+					}
+				},
+				"terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
+			}
+		}
+	}
+	// "forwardPorts": [xxxxx]
+}
